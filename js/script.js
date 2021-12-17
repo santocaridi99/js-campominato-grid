@@ -26,7 +26,9 @@ const container = document.querySelector('.container');
 //aggiungi classe container in modo tale che entrano 100 quadratini
 button1.addEventListener('click',function(){
     container.innerHTML='';
-    container.classList.toggle('easy-container');
+    container.classList.add('easy-container');
+    container.classList.remove('medium-container');
+    container.classList.remove('hard-container');
     for(let i=1 ; i <= 100 ; i++){
         createBox(container , i)
     }
@@ -36,7 +38,9 @@ button1.addEventListener('click',function(){
 //aggiungi classe container in modo tale che entrano 81 quadratini
 button2.addEventListener('click',function(){
     container.innerHTML='';
-    container.classList.toggle('medium-container');
+    container.classList.add('medium-container');
+    container.classList.remove('hard-container');
+    container.classList.remove('easy-container');
     for(let i=1 ; i <= 81 ; i++){
         createBox(container , i)
     }
@@ -46,7 +50,9 @@ button2.addEventListener('click',function(){
 //aggiungi classe container in modo tale che entrano 49 quadratini
 button3.addEventListener('click',function(){
     container.innerHTML='';
-    container.classList.toggle('hard-container');
+    container.classList.add('hard-container');
+    container.classList.remove('medium-container');
+    container.classList.remove('easy-container');
     for(let i=1 ; i <= 49 ; i++){
         createBox(container , i)
     }

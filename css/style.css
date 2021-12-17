@@ -21,12 +21,15 @@
 
 .container.easy-container{
     width: 500px;
+    height: 500px;
 }
 
 .container.medium-container{
     width: 450px;
+    height: 450px;
 }
 
 .container.hard-container{
     width: 350px;
+    height: 350px;
 }
