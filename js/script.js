@@ -24,6 +24,7 @@ const container = document.querySelector('.container');
 //genera numeri da 1 a 100
 //aggiungi classe container in modo tale che entrano 100 quadratini
 button1.addEventListener('click',function(){
+    container.innerHTML='';
     for(let i=0 ; i < 100 ; i++){
         createBox(container)
     }
@@ -34,6 +35,7 @@ button1.addEventListener('click',function(){
 //genera numeri  da 1 a 81
 //aggiungi classe container in modo tale che entrano 81 quadratini
 button2.addEventListener('click',function(){
+    container.innerHTML='';
     for(let i=0 ; i < 81 ; i++){
         createBox(container)
     }
@@ -43,6 +45,7 @@ button2.addEventListener('click',function(){
 //genera numeri  da 1 a 49
 //aggiungi classe container in modo tale che entrano 49 quadratini
 button3.addEventListener('click',function(){
+    container.innerHTML='';
     for(let i=0 ; i < 49 ; i++){
         createBox(container)
     }
